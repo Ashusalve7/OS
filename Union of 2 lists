@@ -1,0 +1,12 @@
+lst_1 = []
+num_1 = int(input("Enter the size of the list:\t"))
+for n in range(num_1):
+ x = int(input("Enter any numbers:\t"))
+ lst_1.append(x)
+lst_2 = []
+num_2 = int(input("Enter the size of the list:\t"))
+for n in range(num_2):
+ x = int(input("Enter any numbers:\t"))
+ lst_2.append(x)
+union = list(set().union(lst_1,lst_2))
+print("\n The Union of two list is:\t",union)
