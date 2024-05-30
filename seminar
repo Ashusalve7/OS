@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Functions Using</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+padding: 20px;
+}
+h1 {
+text-align: center;
+}
+.problem-container {
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+padding: 20px;
+margin-bottom: 20px;
+}
+.output {
+margin-top: 10px;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>JavaScript Functions</h1>
+<div class="problem-container">
+<h2>Problem a: Length of the String</h2>
+<input type="text" id="string-input" placeholder="Enter a string">
+<button onclick="calculateStringLength()">Calculate Length</button>
+<div id="string-output" class="output"></div>
+</div>
+<div class="problem-container">
+<h2>Problem b: Number with Reversed Digits</h2>
+<input type="number" id="number-input" placeholder="Enter a number">
+<button onclick="reverseNumberDigits()">Reverse Digits</button>
+<div id="number-output" class="output"></div>
+</div>
+<script>
+// Function to calculate the length of a string
+function calculateStringLength() {
+var str = document.getElementById('string-input').value;
+var strLength = str.length;
+document.getElementById('string-output').textContent = "Length of the string \"" + str + "\" is:
+" + strLength;
+}
+// Function to reverse the digits of a number
+function reverseNumberDigits() {
+var num = document.getElementById('number-input').value;
+var reversedNum = parseInt(num.toString().split("").reverse().join(""));
+document.getElementById('number-output').textContent = "Number " + num + " with
+reversed digits is: " + reversedNum;
+}
+</script>
+</body>
+</html>
